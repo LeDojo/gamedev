@@ -9,12 +9,14 @@ function App() {
       }}>
       <GridItem area="nav" bg="coral">NAV</GridItem>
       <Show above="lg">
-
         
         <GridItem area="aside" bg="gold">ASIDE</GridItem>
+      
+      </Show>
+
         <GridItem area="main" bg="dodgerblue">MAIN</GridItem>
 
-      </Show>
+      
     </Grid>
     </>
   );
