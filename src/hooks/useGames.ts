@@ -36,8 +36,8 @@ const useGames = () => {
         setError(err.message);
       });
     return () => controller.abort();
-  });
-  return { error, games };
+  }, []);
+  return { error, games, isLoading };
 };
 
 export default useGames;
