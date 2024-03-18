@@ -10,7 +10,7 @@ interface Props {
 export default function GameCard({ game }: Props) {
   return (
     <Card>
-      <Image src={game.background_image} />
+      <Image src={getCroppedImageUrl(game.background_image)} />
       <CardBody>
         <Heading>{game.name}</Heading>
         <HStack justifyContent={"space-between"}>
